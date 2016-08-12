@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		03196DB31D5DF11000A0C8A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03196DB21D5DF11000A0C8A7 /* AppDelegate.swift */; };
 		03196DB51D5DF11000A0C8A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03196DB41D5DF11000A0C8A7 /* ViewController.swift */; };
-		03196DB81D5DF11000A0C8A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03196DB61D5DF11000A0C8A7 /* Main.storyboard */; };
 		03196DBA1D5DF11000A0C8A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03196DB91D5DF11000A0C8A7 /* Assets.xcassets */; };
 		03196DBD1D5DF11000A0C8A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03196DBB1D5DF11000A0C8A7 /* LaunchScreen.storyboard */; };
 		03196DCD1D5DF4AF00A0C8A7 /* AgentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03196DCC1D5DF4AF00A0C8A7 /* AgentTests.swift */; };
@@ -29,7 +28,6 @@
 		03196DAF1D5DF11000A0C8A7 /* Agent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Agent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03196DB21D5DF11000A0C8A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03196DB41D5DF11000A0C8A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		03196DB71D5DF11000A0C8A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		03196DB91D5DF11000A0C8A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03196DBC1D5DF11000A0C8A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03196DBE1D5DF11000A0C8A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -77,12 +75,8 @@
 		03196DB11D5DF11000A0C8A7 /* Agent */ = {
 			isa = PBXGroup;
 			children = (
-				03196DB21D5DF11000A0C8A7 /* AppDelegate.swift */,
-				03196DB41D5DF11000A0C8A7 /* ViewController.swift */,
-				03196DB61D5DF11000A0C8A7 /* Main.storyboard */,
-				03196DB91D5DF11000A0C8A7 /* Assets.xcassets */,
-				03196DBB1D5DF11000A0C8A7 /* LaunchScreen.storyboard */,
-				03196DBE1D5DF11000A0C8A7 /* Info.plist */,
+				033E8F371D5DF65E00378E60 /* Controllers */,
+				033E8F381D5DF66600378E60 /* Support */,
 			);
 			path = Agent;
 			sourceTree = "<group>";
@@ -94,6 +88,25 @@
 				03196DCE1D5DF4AF00A0C8A7 /* Info.plist */,
 			);
 			path = AgentTests;
+			sourceTree = "<group>";
+		};
+		033E8F371D5DF65E00378E60 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				03196DB41D5DF11000A0C8A7 /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		033E8F381D5DF66600378E60 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				03196DB21D5DF11000A0C8A7 /* AppDelegate.swift */,
+				03196DB91D5DF11000A0C8A7 /* Assets.xcassets */,
+				03196DBB1D5DF11000A0C8A7 /* LaunchScreen.storyboard */,
+				03196DBE1D5DF11000A0C8A7 /* Info.plist */,
+			);
+			name = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,7 +198,6 @@
 			files = (
 				03196DBD1D5DF11000A0C8A7 /* LaunchScreen.storyboard in Resources */,
 				03196DBA1D5DF11000A0C8A7 /* Assets.xcassets in Resources */,
-				03196DB81D5DF11000A0C8A7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,14 +270,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		03196DB61D5DF11000A0C8A7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				03196DB71D5DF11000A0C8A7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		03196DBB1D5DF11000A0C8A7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -441,6 +445,7 @@
 				03196DC31D5DF11000A0C8A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		03196DD11D5DF4AF00A0C8A7 /* Build configuration list for PBXNativeTarget "AgentTests" */ = {
 			isa = XCConfigurationList;
@@ -449,6 +454,7 @@
 				03196DD31D5DF4AF00A0C8A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

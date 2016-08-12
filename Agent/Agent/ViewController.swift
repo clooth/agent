@@ -9,17 +9,24 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+  let placeholderLabel = UILabel(frame: .zero)
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    title = "Agent"
+    
+    // Configure initial style
+    view.backgroundColor = .white
+    edgesForExtendedLayout = .all
+    
+    // Display the placeholder info label
+    placeholderLabel.text = "welcome."
+    placeholderLabel.textColor = UIColor(colorLiteralRed: 238/255.0, green: 100/255.0, blue: 86/255.0, alpha: 1.0)
+    placeholderLabel.sizeToFit()
+    placeholderLabel.center = view.center
+    view.addSubview(placeholderLabel)
   }
-
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
-  }
-
 
 }
 

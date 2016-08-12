@@ -10,12 +10,22 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
   var window: UIWindow?
 
-
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-    // Override point for customization after application launch.
+    // Create main view controller
+    let viewController = ViewController(nibName: nil, bundle: nil)
+    
+    // Create main navigation controller
+    let navigationController = UINavigationController(rootViewController: viewController)
+    
+    // Create and display main application window
+    let screenBounds = UIScreen.main.bounds
+    window = UIWindow(frame: screenBounds)
+    window?.rootViewController = navigationController
+    window?.backgroundColor = .white
+    window?.makeKeyAndVisible()
+    
     return true
   }
 
